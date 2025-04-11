@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Product Filter</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body onload=dropDown()>
+    <nav id="nav">
+        <h1>Dynamic Product Filter</h1>
+        <input type="text" placeholder="search Products" id="searchButton" oninput="searchBox()">
+            <select id="category" onchange=dropDown() >
+                <!-- <option style = "display : none">Select</option> -->
+                <option value="all">All Products</option>
+                <option value="clothes" >Clothes</option>
+                <option value="electronics">Electronics</option>
+                <option value="furniture">Furniture</option>
+            </select>
+           
+        
+    </nav>
+    <div class="card" id="cards">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+<!-- <button onclick="dropDown()" onmouseover="showMenu('all')" >All Products</button>
+<ul>
+   
+    <li><button class="ctg" style = "display : none" onclick="dropDown('clothes')" onmouseover="showMenu('clothes')">clothes</button>
+    <ul >
+        <li><button style =" display: none" id="men" onclick="dropDown('men')">Men</button></li>
+        <li><button style =" display: none" id="women" onclick="dropDown('women')">Women</button></li>
+        <li><button style =" display: none" id="kids" onclick="dropDown('kids')">Kids</button></li>
+    </ul></li>
+
+    <li><button class="ctg" style = "display : none" onclick="dropDown('electronics')" onmouseover="showMenu('electronics')">electronics</button>
+        <ul >
+            <li><button style =" display: none" id="ac" onclick="dropDown('ac')">Air Conditioner</button></li>
+            <li><button style =" display: none" id="fridge" onclick="dropDown('fridge')">Fridge</button></li>
+        </ul></li>
+
+    <li><button class="ctg" style = "display : none" onclick="dropDown('furniture')" onmouseover="showMenu('furniture')">furniture</button>
+            <ul>
+                <li><button style =" display: none" id="sofa" onclick="dropDown('sofa')" >Sofa</button></li>
+                <li><button style =" display: none" id="bed" onclick="dropDown('bed')">Bed</button></li>
+            </ul>
+        </li>
+</ul> -->
